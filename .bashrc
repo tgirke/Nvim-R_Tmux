@@ -1,14 +1,9 @@
 alias ll='ls -l'
 
-# modules definitions
-if [ -n "$MODULESHOME" ]; then
-  module load vim
-fi
-
 # for new neovim and nvim-r
 if [ -n "$MODULESHOME" ]; then
-     module load neovim
-     module load tmux/2.2
+     module load neovim/0.6.0
+     module load tmux/3.3
 fi
 
 ## Call nvim with vim
