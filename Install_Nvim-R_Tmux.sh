@@ -4,6 +4,7 @@
 ## Author: Thomas Girke
 ## Date: 16-Mar-22
 ## User instructions are here: https://bit.ly/3CLzS41
+## Note: this script needs to be run from within the cloned Install_Nvim-R_Tmux repos
 
 ## Check in run dir for existence of files/dirs to be created and later deleted 
 if [ -f Install_Nvim-R_Tmux.zip ] || [ -d Install_Nvim-R_Tmux ]; then
