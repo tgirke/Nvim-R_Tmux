@@ -1,6 +1,6 @@
 # Install_Nvim-R_Tmux
 
-## Clone `Install_Nvim-R_Tmux` repos to your home on HPCC
+## Clone repos to your home directory (e.g. on HPCC)
 
 ```sh
 git clone git@github.com:tgirke/Install_Nvim-R_Tmux.git
