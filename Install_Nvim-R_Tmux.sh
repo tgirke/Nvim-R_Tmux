@@ -14,6 +14,7 @@ fi
 
 ## Clone Install_Nvim-R_Tmux repos to your home on HPCC
 # git clone git@github.com:tgirke/Install_Nvim-R_Tmux.git
+# cd Install_Nvim-R_Tmux
 
 ## Copy the following files/dirs from Install_Nvim-R_Tmux and make backups of existing versions
 ## 1. .bashrc file
