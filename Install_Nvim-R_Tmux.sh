@@ -62,8 +62,6 @@ cp -r .local/share/nvim ~/.local/share
 echo "Moved new .local/share/nvim directory to ~/.local/share and created backup (~/.local/share/nvim_bak) of existing one."
 
 ## Clean-up
-#rm nvimRtmux.zip
-#rm -rf nvimRtmux
 cd ..
 rm -rf Install_Nvim-R_Tmux
 
