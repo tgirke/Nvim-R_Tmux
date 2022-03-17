@@ -12,28 +12,28 @@ if [ -f Install_Nvim-R_Tmux.zip ] || [ -d Install_Nvim-R_Tmux ]; then
 fi
 
 ## Clone Install_Nvim-R_Tmux repos to your home on HPCC
-git clone git@github.com:tgirke/Install_Nvim-R_Tmux.git
+# git clone git@github.com:tgirke/Install_Nvim-R_Tmux.git
 
 ## Copy the following files/dirs from Install_Nvim-R_Tmux and make backups of existing versions
 ## 1. .bashrc file
 if [ -f ~/.bashrc ]; then
     mv ~/.bashrc ~/.bashrc_bak
 fi
-cp Install_Nvim-R_Tmux/.bashrc ~/
+cp .bashrc ~/
 echo "Moved new .bashrc file to home and created backup (~/.bashrc_bak) of existing one."
 
 ## 2. .tmux.conf file
 if [ -f ~/.tmux.conf ]; then
     mv ~/.tmux.conf ~/.tmux.conf_bak
 fi
-cp Install_Nvim-R_Tmux/.tmux.conf ~/
+cp .tmux.conf ~/
 echo "Moved new .tmux.conf file to home and created backup (~/.tmux.conf_bak) of existing one."
 
 ## 3. .Rprofile file
 if [ -f ~/.Rprofile ]; then
     mv ~/.Rprofile ~/.Rprofile_bak
 fi
-cp Install_Nvim-R_Tmux/.Rprofile ~/
+cp .Rprofile ~/
 echo "Moved new .Rprofile file to home and created backup (~/.Rprofile_bak) of existing one."
 
 ## 4. .config directory
@@ -43,7 +43,7 @@ fi
 if [ -d ~/.config/nvim ]; then
     mv ~/.config/nvim ~/.config/nvim_bak
 fi
-cp -r Install_Nvim-R_Tmux/.config/nvim ~/.config/
+cp -r .config/nvim ~/.config/
 echo "Moved new .config/nvim directory to ~/.config and created backup (~/.config/nvim_bak) of existing one."
 
 ## 5. .local directory
@@ -56,14 +56,15 @@ fi
 if [ -d ~/.local/share/nvim ]; then
     mv ~/.local/share/nvim ~/.local/share/nvim_bak
 fi
-cp -r Install_Nvim-R_Tmux/.local/share/nvim ~/.local/share
-echo "Moved new .local/share/nvim directory to ~/.local/share and created backup (~/.local/share//nvim_bak) of existing one."
+cp -r .local/share/nvim ~/.local/share
+echo "Moved new .local/share/nvim directory to ~/.local/share and created backup (~/.local/share/nvim_bak) of existing one."
 
 ## Clean-up
 #rm nvimRtmux.zip
 #rm -rf nvimRtmux
+cd ..
 rm -rf Install_Nvim-R_Tmux
 
 ## In case someone wants to undo changes here are some instructions
-printf "To undo changes, run: \n\tmv .bashrc .bashrc_bak2; mv .bashrc_bak .bashrc; mv .tmux.conf .tmux.conf_bak2; mv .tmux.conf_bak .tmux.conf; mv .Rprofile .Rprofile_bak2; mv .Rprofile_bak .Rprofile; mv .config .config_bak2; mv .config_bak .config \n"
+printf "To undo changes, run: \n\tcd ~/; mv .bashrc .bashrc_bak2; mv .bashrc_bak .bashrc; mv .tmux.conf .tmux.conf_bak2; mv .tmux.conf_bak .tmux.conf; mv .Rprofile .Rprofile_bak2; mv .Rprofile_bak .Rprofile; mv .config/nvim .config/nvim_bak2; mv .config/nvim_bak .config/nvim; mv .local/share/nvim .local/share/nvim_bak2; mv .local/share/nvim_bak .local/share/nvim\n"
 
