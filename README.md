@@ -8,7 +8,7 @@ script will activate custom config files/directories in a user's home account, i
 `Install_Nvim-R_Tmux.sh` users want to make sure that they want these  changes performed 
 in their home account. Instructions how to undo the changes, in case something goes wrong, 
 are printed to the screen. Another alternative is to install the individual components
-stepwise by executing the lines in `Install_Nvim-R_Tmux.sh` individually.
+stepwise by executing the lines in [`Install_Nvim-R_Tmux.sh`](https://github.com/tgirke/Install_Nvim-R_Tmux/blob/main/Install_Nvim-R_Tmux.sh) individually.
 
 ## Clone repos to your home directory
 
