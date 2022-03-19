@@ -9,13 +9,14 @@
 
 1. [Overview](#overview)
 2. [Installation](#intallation)
-    1. [Neovim](#neovim)
-    2. [Tmux](#tmux) 
-    3. [R package colorout](#colorout)
-    4. [Nvim-R plugin](#nvimr)
-    5. [Nerdtree](#nerdtree)
-    6. [Color Scheme](#colorscheme)
-    7. [Setup in user accounts of UCR's HPCC](#ucrhpcc)
+    1. [Quick Install](#quickinstall)
+    2. [Neovim](#neovim)
+    3. [Tmux](#tmux) 
+    4. [R package colorout](#colorout)
+    5. [Nvim-R plugin](#nvimr)
+    6. [Nerdtree](#nerdtree)
+    7. [Color Scheme](#colorscheme)
+    8. [Setup in user accounts of UCR's HPCC](#ucrhpcc)
 3. [Usage and configuration](#usage)
     1. [Run R in built-in terminal emulator](#usage_nvim-r-split)
     2. [Run R in Tmux pane](#usage_tmux-split)
@@ -45,7 +46,7 @@ __Animated Screenshot of Nvim-R (from [here](https://github.com/jalvesaq/Nvim-R)
 
 <div id='quickinstall'/>
 
-### 2.1 Install Nvim-R-Tmux
+### 2.1 Quick install of Nvim-R-Tmux
 
 The following is a convenience install script to configure the Nvim-R-Tmux environment
 described [here](https://gist.github.com/tgirke/7a7c197b443243937f68c422e5471899) in a 
