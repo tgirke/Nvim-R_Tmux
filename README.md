@@ -54,7 +54,7 @@ optionally [Tmux](#tmux) are already pre-installed on a user's system. If this i
 steps 2.2 (or 5.2) and 2.3 (or 5.3) need to be completed first. 
 
 Note, executing as shown below the 
-[`Install_Nvim-R_Tmux.sh`](https://github.com/tgirke/Install_Nvim-R_Tmux/blob/main/Install_Nvim-R_Tmux.sh)
+[`Install_Nvim-R_Tmux.sh`](https://github.com/tgirke/Nvim-R_Tmux/blob/main/Install_Nvim-R_Tmux.sh)
 script will activate custom config files/directories in a user's home
 directory, including: `.bashrc`, `.tmux.conf`, `.Rprofile`, `.config/` and
 `.local/`. Thus, prior to executing `Install_Nvim-R_Tmux.sh` users want to make
@@ -62,7 +62,7 @@ sure that they accept to have these  changes performed in their home account.
 Instructions how to undo the changes, in case something goes wrong, are printed
 to the screen. An alternative is to install the individual components stepwise
 by executing the lines in
-[`Install_Nvim-R_Tmux.sh`](https://github.com/tgirke/Install_Nvim-R_Tmux/blob/main/Install_Nvim-R_Tmux.sh)
+[`Install_Nvim-R_Tmux.sh`](https://github.com/tgirke/Nvim-R_Tmux/blob/main/Install_Nvim-R_Tmux.sh)
 individually, or to proceed with the manual configuration outlined in the subsequent sections.
 
 #### Clone repos to your home directory
