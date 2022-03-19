@@ -4,7 +4,7 @@
 ## Author: Thomas Girke
 ## Date: 16-Mar-22
 ## User instructions are here: https://bit.ly/3CLzS41
-## Note: this script needs to be run from within the cloned Install_Nvim-R_Tmux repos
+## Note: this script needs to be run from within the cloned Nvim-R_Tmux repos
 
 ## Check in run dir for existence of files/dirs to be created and later deleted 
 if [ -f Nvim-R_Tmux.zip ] || [ -d Nvim-R_Tmux ]; then
@@ -12,11 +12,11 @@ if [ -f Nvim-R_Tmux.zip ] || [ -d Nvim-R_Tmux ]; then
     exit 0
 fi
 
-## Clone Install_Nvim-R_Tmux repos to your home on HPCC
+## Clone Nvim-R_Tmux repos to your home on HPCC
 # git clone git@github.com:tgirke/Nvim-R_Tmux.git
 # cd Nvim-R_Tmux
 
-## Copy the following files/dirs from Install_Nvim-R_Tmux and make backups of existing versions
+## Copy the following files/dirs from Nvim-R_Tmux and make backups of existing versions
 ## 1. .bashrc file
 if [ -f ~/.bashrc ]; then
     mv ~/.bashrc ~/.bashrc_bak
@@ -63,7 +63,7 @@ echo "Moved new .local/share/nvim directory to ~/.local/share and created backup
 
 ## Clean-up
 cd ..
-rm -rf Install_Nvim-R_Tmux
+rm -rf Nvim-R_Tmux
 
 ## In case someone wants to undo changes here are some instructions
 printf "To undo changes, run: \n\tcd ~/; mv .bashrc .bashrc_bak2; mv .bashrc_bak .bashrc; mv .tmux.conf .tmux.conf_bak2; mv .tmux.conf_bak .tmux.conf; mv .Rprofile .Rprofile_bak2; mv .Rprofile_bak .Rprofile; mv .config/nvim .config/nvim_bak2; mv .config/nvim_bak .config/nvim; mv .local/share/nvim .local/share/nvim_bak2; mv .local/share/nvim_bak .local/share/nvim\n"
