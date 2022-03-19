@@ -10,8 +10,8 @@
 
 1. [Overview](#overview)
 2. [Installation](#intallation)
-    1. [Quick install](#quickinstall)
-    2. [Neovim](#neovim)
+    1 [Quick install](#quickinstall)
+    2 [Neovim](#neovim)
     3. [Tmux](#tmux) 
     4. [R package colorout](#colorout)
     5. [Nvim-R plugin](#nvimr)
