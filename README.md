@@ -1,7 +1,7 @@
 # Nvim-R-Tmux: Neovim-based IDE for R
 
 + Author: Thomas Girke
-+ Last update: 18-Nov-2020
++ Last update: 16-Mar-2022
 
 * * *
 
@@ -48,15 +48,22 @@ __Animated Screenshot of Nvim-R (from [here](https://github.com/jalvesaq/Nvim-R)
 
 ### 2.1 Quick install of Nvim-R-Tmux
 
-The following is a convenience install script to configure the Nvim-R-Tmux environment
-described [here](https://gist.github.com/tgirke/7a7c197b443243937f68c422e5471899) in a 
-user's home account. Note, the below [`Install_Nvim-R_Tmux.sh`](https://github.com/tgirke/Install_Nvim-R_Tmux/blob/main/Install_Nvim-R_Tmux.sh) 
-script will activate custom config files/directories in a user's home account, including: 
-`.bashrc`, `.tmux.conf`, `.Rprofile`, `.config/` and `.local/`. Thus, prior to executing 
-`Install_Nvim-R_Tmux.sh` users want to make sure that they want these  changes performed 
-in their home account. Instructions how to undo the changes, in case something goes wrong, 
-are printed to the screen. Another alternative is to install the individual components
-stepwise by executing the lines in [`Install_Nvim-R_Tmux.sh`](https://github.com/tgirke/Install_Nvim-R_Tmux/blob/main/Install_Nvim-R_Tmux.sh) individually.
+The following provides a convenience quick install option to configure the Nvim-R-Tmux environment
+described in a user's home directory. This assumes that recent version of [Neovim](#neovim) and
+optionally [Tmux](#tmux) are already installed on a user's system. If not then steps 2.2 and 2.3 
+need to be completed first. 
+
+Note, executing the below
+[`Install_Nvim-R_Tmux.sh`](https://github.com/tgirke/Install_Nvim-R_Tmux/blob/main/Install_Nvim-R_Tmux.sh)
+script will activate custom config files/directories in a user's home
+directory, including: `.bashrc`, `.tmux.conf`, `.Rprofile`, `.config/` and
+`.local/`. Thus, prior to executing `Install_Nvim-R_Tmux.sh` users want to make
+sure that they accept to have these  changes performed in their home account.
+Instructions how to undo the changes, in case something goes wrong, are printed
+to the screen. An alternative is to install the individual components stepwise
+by executing the lines in
+[`Install_Nvim-R_Tmux.sh`](https://github.com/tgirke/Install_Nvim-R_Tmux/blob/main/Install_Nvim-R_Tmux.sh)
+individually, or to proceed with the manual configuration in the subsequent sections.
 
 #### Clone repos to your home directory
 
