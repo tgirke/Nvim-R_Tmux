@@ -86,7 +86,7 @@ bash Install_Nvim-R_Tmux.sh
 <div id='neovim'/>
 
 ### 2.2. Install Neovim for your OS 
-Neovim Version >= 0.1.7 is required for Nvim-R. For the installation, follow the instructions [here](https://github.com/neovim/neovim/wiki/Installing-Neovim). A sample config file for controlling Neovim, called `init.vim`, is given [below](https://gist.githubusercontent.com/tgirke/7a7c197b443243937f68c422e5471899/raw/init.vim). This or a similar `init.vim` file should be downloaded and saved to a user's home under `~/.config/nvim/init.vim`.
+Neovim Version >= 0.1.7 is required for Nvim-R. For the installation, follow the instructions [here](https://github.com/neovim/neovim/wiki/Installing-Neovim). A sample config file for controlling Neovim, called `init.vim`, is given [below](https://github.com/tgirke/Nvim-R_Tmux/blob/main/.config/nvim/init.vim). This or a similar `init.vim` file should be downloaded and saved to a user's home under `~/.config/nvim/init.vim`.
 
 __Advanced__: for more advanced users it may often become important to install the latest Neovim version. For this it can be very useful to download Neovim from its [GitHub repos](https://github.com/neovim/), and then install it from source following these [instructions](#source_install_nvim). Using a package management software available on a user's system may be more convenient, but this will often only allow the installation of older Neovim versions. More detailed instructions for installing Neovim from source are given [below](#source_install_nvim).
 
@@ -234,8 +234,8 @@ Note, closing R in this setup will also close the corresponding Tmux pane. This 
 ## 4. Config files
 The following config files (or similar custom versions) should be saved to the following locations in a user's home directory:
 
-- File [init.vim](https://gist.githubusercontent.com/tgirke/7a7c197b443243937f68c422e5471899/raw/init.vim) for Neovim: `~/.config/nvim/init.vim`
-- File [tmux.conf](https://gist.githubusercontent.com/tgirke/7a7c197b443243937f68c422e5471899/raw/tmux.conf) for Tmux: `~/.tmux.conf`
+- File [init.vim](https://github.com/tgirke/Nvim-R_Tmux/blob/main/.config/nvim/init.vim) for Neovim: `~/.config/nvim/init.vim`
+- File [tmux.conf](https://github.com/tgirke/Nvim-R_Tmux/blob/main/.tmux.conf) for Tmux: `~/.tmux.conf`
 
 <div id='advanced'/>
 
