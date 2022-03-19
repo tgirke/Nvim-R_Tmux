@@ -43,21 +43,51 @@ __Animated Screenshot of Nvim-R (from [here](https://github.com/jalvesaq/Nvim-R)
 
 ## 2. Installation
 
+<div id='quickinstall'/>
+
+### 2.1 Install Nvim-R-Tmux
+
+The following is a convenience install script to configure the Nvim-R-Tmux environment
+described [here](https://gist.github.com/tgirke/7a7c197b443243937f68c422e5471899) in a 
+user's home account. Note, the below [`Install_Nvim-R_Tmux.sh`](https://github.com/tgirke/Install_Nvim-R_Tmux/blob/main/Install_Nvim-R_Tmux.sh) 
+script will activate custom config files/directories in a user's home account, including: 
+`.bashrc`, `.tmux.conf`, `.Rprofile`, `.config/` and `.local/`. Thus, prior to executing 
+`Install_Nvim-R_Tmux.sh` users want to make sure that they want these  changes performed 
+in their home account. Instructions how to undo the changes, in case something goes wrong, 
+are printed to the screen. Another alternative is to install the individual components
+stepwise by executing the lines in [`Install_Nvim-R_Tmux.sh`](https://github.com/tgirke/Install_Nvim-R_Tmux/blob/main/Install_Nvim-R_Tmux.sh) individually.
+
+#### Clone repos to your home directory
+
+```sh
+git clone git@github.com:tgirke/Install_Nvim-R_Tmux.git
+```
+
+#### Install Nvim-R_Tmux environment
+
+This installs the entire `Nvim-R_Tmux` environment into a users home account. 
+
+
+```sh
+cd Install_Nvim-R_Tmux
+bash Install_Nvim-R_Tmux.sh
+```
+
 <div id='neovim'/>
 
-### 2.1. Install Neovim for your OS 
+### 2.2. Install Neovim for your OS 
 Neovim Version >= 0.1.7 is required for Nvim-R. For the installation, follow the instructions [here](https://github.com/neovim/neovim/wiki/Installing-Neovim). A sample config file for controlling Neovim, called `init.vim`, is given [below](https://gist.githubusercontent.com/tgirke/7a7c197b443243937f68c422e5471899/raw/init.vim). This or a similar `init.vim` file should be downloaded and saved to a user's home under `~/.config/nvim/init.vim`.
 
 __Advanced__: for more advanced users it may often become important to install the latest Neovim version. For this it can be very useful to download Neovim from its [GitHub repos](https://github.com/neovim/), and then install it from source following these [instructions](#source_install_nvim). Using a package management software available on a user's system may be more convenient, but this will often only allow the installation of older Neovim versions. More detailed instructions for installing Neovim from source are given [below](#source_install_nvim).
 
 <div id='tmux'/>
 
-### 2.2. Install Tmux 
+### 2.3. Install Tmux 
 The usage of Tmux with Nvim-R is highly recommended on Linux or OS X systems but not absolutely necessary. Supported Tmux versions are >=2.0. To upgrade Tmux to a more recent version, one can follow the instructions [here](https://goo.gl/FssKpb). To install it from source, consult see intructions below [here](#source_install_tmux). If you get on Ubuntu 16.04 a `locale-gen en_US.UTF-8` error, then the last step [here](https://github.com/openwrt/packages/issues/2900) fixes it.  A sample config file for controlling Tmux, called `.tmux.conf`, is given [below](https://gist.githubusercontent.com/tgirke/7a7c197b443243937f68c422e5471899/raw/tmux.conf). This or a similar `.tmux.conf` file should be downloaded and saved to a user's home under `~/.tmux.conf`.
 
 <div id='colorout'/>
 
-### 2.3. Install R package `colorout` 
+### 2.4. Install R package `colorout` 
 The R package `colorout` is available on GitHub [here](https://github.com/jalvesaq/colorout). If it is not yet installed in an R environment, one can install it from within R via the `devtools` package as follows: 
 
 ```sh
@@ -66,9 +96,9 @@ devtools::install_github("jalvesaq/colorout")
 
 <div id='nvimr'/>
 
-### 2.4. Install Nvim-R plugin for Neovim
+### 2.5. Install Nvim-R plugin for Neovim
 
-#### 2.4.1 Manual install
+#### 2.5.1 Manual install
 Download the latest `*.vmb` from [here](https://vim8.org/scripts/script.php?script_id=2628). Then open the downloaded file with nvim (neovim), and then run from nvim's command mode the following commands:
 
 ```sh
@@ -77,7 +107,7 @@ Download the latest `*.vmb` from [here](https://vim8.org/scripts/script.php?scri
 # press space bar a few times until install is complete!
 ```
 
-#### 2.4.2 Install with plugin manager
+#### 2.5.2 Install with plugin manager
 When new features become available in Nvim-R then one can get them immediately by installing the Nvim-R plugin from its [GitHub repos](https://github.com/jalvesaq/Nvim-R) directly. After downloading the repos, one can move its content (files and directories) manually to `~/.config/nvim` or install it with a Neovim plugin manager that includes GitHub support. The following uses `vim-plug` as plugin manager. After installing `vim-plug` for neovim as outlined [here](https://github.com/junegunn/vim-plug/wiki/tutorial) one can install plugins by listing them at the end of the `~/.config/nvim/init.vim` file as follows:
 
 ```sh
@@ -100,7 +130,7 @@ The version information for the Nvim-R plugin can be returned from vim's command
 
 <div id='nerdtree'/>
 
-### 2.5. Install Nerdtree (optional)
+### 2.6. Install Nerdtree (optional)
 Download the Nerdtree vim plugin from [here](http://www.vim.org/scripts/script.php?script_id=1658). Then extract to `~/.config/nvim` with the following command. Note, if `vim-plug` is used as outlined under section 2.4.2 then Nerdtree will be installed automatically.
 
 ```sh
@@ -109,12 +139,12 @@ unzip NERD_tree.zip -d ~/.config/nvim
 
 <div id='colorscheme'/>
 
-### 2.6. Color Scheme (optional)
+### 2.7. Color Scheme (optional)
 Jakson Alves de Aquino has developed the `southernlights` color scheme that works well with Nvim-R. To enable it, users want to save the file `southernlights.vim` from this [repos](https://github.com/jalvesaq/southernlights) to `~/.config/nvim/colors/` and add the recommended bash configurations to your `.bashrc` as described [here](https://github.com/jalvesaq/southernlights).  Note, this color scheme should be installed under `~/.config/nvim/colors/` even if a plugin manager is used that installs other plugins under `~/.local/share/nvim/plugged/`.
 
 <div id='ucrhpcc'/>
 
-### 2.7. Setup in user accounts of UCR's HPCC
+### 2.8. Setup in user accounts of UCR's HPCC
 Neovim and Tmux are already installed systemwide on the [HPCC](https://hpcc.ucr.edu/), but need to be loaded from the module system (step 1). What remains to be installed in each user's account are the plugins and configuration files as outlined below under steps 2-5. Alternatively, all required resources will be installed automatically by executing the command [`Install_Nvim-R_Tmux`](https://github.com/tgirke/Install_Nvim-R_Tmux) (old version was `install_nvimRtmux`) in a user's HPCC account.  
 
 1. Add to your `.bashrc` the following lines
@@ -520,30 +550,3 @@ __b.__ ...
 ...
 
 
-# Install_Nvim-R_Tmux
-
-The following is a convenience install script to configure the Nvim-R-Tmux environment
-described [here](https://gist.github.com/tgirke/7a7c197b443243937f68c422e5471899) in a 
-user's home account. Note, the below [`Install_Nvim-R_Tmux.sh`](https://github.com/tgirke/Install_Nvim-R_Tmux/blob/main/Install_Nvim-R_Tmux.sh) 
-script will activate custom config files/directories in a user's home account, including: 
-`.bashrc`, `.tmux.conf`, `.Rprofile`, `.config/` and `.local/`. Thus, prior to executing 
-`Install_Nvim-R_Tmux.sh` users want to make sure that they want these  changes performed 
-in their home account. Instructions how to undo the changes, in case something goes wrong, 
-are printed to the screen. Another alternative is to install the individual components
-stepwise by executing the lines in [`Install_Nvim-R_Tmux.sh`](https://github.com/tgirke/Install_Nvim-R_Tmux/blob/main/Install_Nvim-R_Tmux.sh) individually.
-
-## Clone repos to your home directory
-
-```sh
-git clone git@github.com:tgirke/Install_Nvim-R_Tmux.git
-```
-
-## Install Nvim-R_Tmux environment
-
-This installs the entire `Nvim-R_Tmux` environment into a users home account. 
-
-
-```sh
-cd Install_Nvim-R_Tmux
-bash Install_Nvim-R_Tmux.sh
-```
