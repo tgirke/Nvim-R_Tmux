@@ -10,13 +10,13 @@
 
 1. [Overview](#overview)
 2. [Installation](#intallation)
-    1. [Quick Install](#quickinstall)
+    1. [Quick install](#quickinstall)
     2. [Neovim](#neovim)
     3. [Tmux](#tmux) 
     4. [R package colorout](#colorout)
     5. [Nvim-R plugin](#nvimr)
     6. [Nerdtree](#nerdtree)
-    7. [Color Scheme](#colorscheme)
+    7. [Color scheme](#colorscheme)
     8. [Setup in user accounts of UCR's HPCC](#ucrhpcc)
 3. [Usage and configuration](#usage)
     1. [Run R in built-in terminal emulator](#usage_nvim-r-split)
@@ -49,18 +49,19 @@ __Animated Screenshot of Nvim-R (from [here](https://github.com/jalvesaq/Nvim-R)
 
 ### 2.1 Quick install of Nvim-R-Tmux
 
-The following provides a convenience quick install option to configure the Nvim-R-Tmux environment
-described below in a user's home directory. This assumes that recent versions of [Neovim](#neovim) and
-optionally [Tmux](#tmux) are already pre-installed on a user's system. If this is not the case, then 
-steps 2.2 (or 5.2) and 2.3 (or 5.3) need to be completed first. 
+The following provides a quick convenience install for configuring the
+Nvim-R-Tmux environment in a user's home directory. This assumes that recent
+versions of [Neovim](#neovim) and optionally [Tmux](#tmux) are already
+pre-installed on a user's system. If this is not the case, then steps 2.2 (or
+5.2) and 2.3 (or 5.3) need to be completed first. 
 
 Note, executing as shown below the 
 [`Install_Nvim-R_Tmux.sh`](https://github.com/tgirke/Nvim-R_Tmux/blob/main/Install_Nvim-R_Tmux.sh)
 script will activate custom config files/directories in a user's home
 directory, including: `.bashrc`, `.tmux.conf`, `.Rprofile`, `.config/` and
-`.local/`. Thus, prior to executing `Install_Nvim-R_Tmux.sh` users want to make
-sure that they accept to have these  changes performed in their home account.
-Instructions how to undo the changes, in case something goes wrong, are printed
+`.local/`. Prior to executing `Install_Nvim-R_Tmux.sh` users want to make
+sure they accept to have these  changes performed in their home account.
+Instructions how to undo these changes, in case something goes wrong, are printed
 to the screen. An alternative is to install the individual components stepwise
 by executing the lines in
 [`Install_Nvim-R_Tmux.sh`](https://github.com/tgirke/Nvim-R_Tmux/blob/main/Install_Nvim-R_Tmux.sh)
