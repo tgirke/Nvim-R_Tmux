@@ -2,6 +2,7 @@
 
 + Author: Thomas Girke
 + Last update: 16-Mar-2022
++ Note: this is the new and up-to-date version of this [Nvim-R-Tmux Gist](https://gist.github.com/tgirke/7a7c197b443243937f68c422e5471899)
 
 * * *
 
