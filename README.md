@@ -49,11 +49,11 @@ __Animated Screenshot of Nvim-R (from [here](https://github.com/jalvesaq/Nvim-R)
 ### 2.1 Quick install of Nvim-R-Tmux
 
 The following provides a convenience quick install option to configure the Nvim-R-Tmux environment
-described in a user's home directory. This assumes that recent version of [Neovim](#neovim) and
-optionally [Tmux](#tmux) are already installed on a user's system. If not then steps 2.2 and 2.3 
-need to be completed first. 
+described below in a user's home directory. This assumes that recent versions of [Neovim](#neovim) and
+optionally [Tmux](#tmux) are already pre-installed on a user's system. If this is not the case, then 
+steps 2.2 (or 5.2) and 2.3 (or 5.3) need to be completed first. 
 
-Note, executing the below
+Note, executing as shown below the 
 [`Install_Nvim-R_Tmux.sh`](https://github.com/tgirke/Install_Nvim-R_Tmux/blob/main/Install_Nvim-R_Tmux.sh)
 script will activate custom config files/directories in a user's home
 directory, including: `.bashrc`, `.tmux.conf`, `.Rprofile`, `.config/` and
@@ -63,7 +63,7 @@ Instructions how to undo the changes, in case something goes wrong, are printed
 to the screen. An alternative is to install the individual components stepwise
 by executing the lines in
 [`Install_Nvim-R_Tmux.sh`](https://github.com/tgirke/Install_Nvim-R_Tmux/blob/main/Install_Nvim-R_Tmux.sh)
-individually, or to proceed with the manual configuration in the subsequent sections.
+individually, or to proceed with the manual configuration outlined in the subsequent sections.
 
 #### Clone repos to your home directory
 
