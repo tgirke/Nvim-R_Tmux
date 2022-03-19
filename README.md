@@ -68,7 +68,7 @@ individually, or to proceed with the manual configuration outlined in the subseq
 #### Clone repos to your home directory
 
 ```sh
-git clone git@github.com:tgirke/Install_Nvim-R_Tmux.git
+git clone git@github.com:tgirke/Nvim-R_Tmux.git
 ```
 
 #### Install Nvim-R_Tmux environment
@@ -77,7 +77,7 @@ This installs the entire `Nvim-R_Tmux` environment into a users home account.
 
 
 ```sh
-cd Install_Nvim-R_Tmux
+cd Nvim-R_Tmux
 bash Install_Nvim-R_Tmux.sh
 ```
 

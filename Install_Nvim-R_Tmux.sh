@@ -7,14 +7,14 @@
 ## Note: this script needs to be run from within the cloned Install_Nvim-R_Tmux repos
 
 ## Check in run dir for existence of files/dirs to be created and later deleted 
-if [ -f Install_Nvim-R_Tmux.zip ] || [ -d Install_Nvim-R_Tmux ]; then
-    printf "File Install_Nvim-R_Tmux.zip or directory Install_Nvim-R_Tmux exist. Delete or rename them prior to runnng this script. \n"
+if [ -f Nvim-R_Tmux.zip ] || [ -d Nvim-R_Tmux ]; then
+    printf "File Nvim-R_Tmux.zip or directory Nvim-R_Tmux exist. Delete or rename them prior to runnng this script. \n"
     exit 0
 fi
 
 ## Clone Install_Nvim-R_Tmux repos to your home on HPCC
-# git clone git@github.com:tgirke/Install_Nvim-R_Tmux.git
-# cd Install_Nvim-R_Tmux
+# git clone git@github.com:tgirke/Nvim-R_Tmux.git
+# cd Nvim-R_Tmux
 
 ## Copy the following files/dirs from Install_Nvim-R_Tmux and make backups of existing versions
 ## 1. .bashrc file
