@@ -142,7 +142,7 @@ The version information for the Nvim-R plugin can be returned from vim's command
 <div id='nerdtree'/>
 
 ### 2.6. Install Nerdtree (optional)
-Download the Nerdtree vim plugin from [here](http://www.vim.org/scripts/script.php?script_id=1658). Then extract to `~/.config/nvim` with the following command. Note, if `vim-plug` is used as outlined under section 2.4.2 then Nerdtree will be installed automatically.
+Download the Nerdtree vim plugin from [here](http://www.vim.org/scripts/script.php?script_id=1658). Then extract to `~/.config/nvim` with the following command. Note, if `vim-plug` is used as outlined [here](#nvimr) then Nerdtree will be installed automatically.
 
 ```sh
 unzip NERD_tree.zip -d ~/.config/nvim
