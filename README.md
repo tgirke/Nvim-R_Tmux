@@ -2,7 +2,7 @@
 
 + Author: Thomas Girke
 + Last update: 16-Mar-2022
-+ Note: this repos replaces the [Nvim-R-Tmux Tutorial](https://gist.github.com/tgirke/7a7c197b443243937f68c422e5471899) on Gist.
++ Note: this repos replaces old [Nvim-R-Tmux Tutorial](https://gist.github.com/tgirke/7a7c197b443243937f68c422e5471899) on Gist.
 
 * * *
 
