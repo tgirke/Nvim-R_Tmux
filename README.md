@@ -236,7 +236,7 @@ Note, closing R in this setup will also close the corresponding Tmux pane. This 
 
 Important key bindings for NerdTree usage:
 
-- `zz or :NERDTreeToggle`: opens NERDTree ('zz' requires corresponding setting in [.config/nvim/init.vim](https://github.com/tgirke/Nvim-R_Tmux/blob/main/.config/nvim/init.vim)
+- `zz or :NERDTreeToggle`: opens NERDTree ('zz' requires corresponding setting in [.config/nvim/init.vim](https://github.com/tgirke/Nvim-R_Tmux/blob/main/.config/nvim/init.vim))
 - `:NERDTreeFind`: finds current file in tree
 - `q`: closes NERDTree
 - `Ctrl-w-w`: jump cursor to next viewport including the one for NERDTree
