@@ -219,7 +219,7 @@ Important keybindings for Tmux panes:
 
 - `Ctrl-a o`: jumps cursor to next pane e.g. from Nvim to R console pane
 - `Ctrl-a Ctrl-o`: swaps panes
-- `Ctrl-z z`: maximizes (zooms into) active pane
+- `Ctrl-a z`: maximizes (zooms into) active pane
 - `Ctrl-a d`: detaches from current session
 - `tmux a`: attaches to tmux session
 - `tmux attach -t <id>`: attaches to specific tmux session
