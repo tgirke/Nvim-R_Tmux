@@ -61,7 +61,7 @@ Note, executing the
 script as shown below will activate custom config files/directories in a user's home
 directory, including: `.bashrc`, `.tmux.conf`, `.Rprofile`, `.config/` and
 `.local/`. Prior to executing `Install_Nvim-R_Tmux.sh`, users want to make
-sure they accept to have these  changes performed in their home account.
+sure that they want these  changes performed in their home account.
 Instructions how to undo these changes, in case something goes wrong, are printed
 to the screen. An alternative is to install the individual components stepwise
 by executing the lines in
