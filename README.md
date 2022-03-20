@@ -21,6 +21,7 @@
 3. [Usage and configuration](#usage)
     1. [Run R in built-in terminal emulator](#usage_nvim-r-split)
     2. [Run R in Tmux pane](#usage_tmux-split)
+    3. [Basic NerdTree usage](#usage_nerdtree)
 4. [Config files](#configfiles)
 5. [Advanced topics](#advanced)
     1. [R version toggle](#rversion_toggle)
@@ -228,6 +229,26 @@ Note, closing R in this setup will also close the corresponding Tmux pane. This 
 
 1. Switch cursor scope to R esssion (with `Ctrl-a o`) and then execute from R pane `system("tmux set remain-on-exit on")`
 2. Quit R with `q()`. This gives a dead pane that can be reactivated by starting a shell in it with the commands `Ctrl-a` and `:respawn-pane bash`
+
+<div id='usage_nerdtree'/>
+
+### 3.3. Basic NERDTree usage
+
+Important key bindings for NerdTree usage:
+
+- `zz or :NERDTreeToggle`: opens NERDTree ('zz' requires corresponding setting in [.config/nvim/init.vim](https://github.com/tgirke/Nvim-R_Tmux/blob/main/.config/nvim/init.vim)
+- `:NERDTreeFind`: finds current file in tree
+- `q`: closes NERDTree
+- `Ctrl-w-w`: jump cursor to next viewport including the one for NERDTree
+- `o or <enter>`: opens selected file
+- `t`: opens file in new tab
+- `gt and gT`: switches between tabs
+- `i`: opens file with horizontal split
+- `s`: opens file in vertical split
+- `m`: opens menu mode for creating/deleting files, `Ctrl-c` exits out of this mode
+- `B`: shows bookmarks
+- `:Bookmark <name>`: creates bookmark for selected tree branch
+- `D`: deletes selected bookmark
 
 <div id='configfiles'/>
 
