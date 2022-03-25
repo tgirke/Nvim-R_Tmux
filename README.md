@@ -15,7 +15,7 @@
     3. [Tmux](#tmux) 
     4. [R package colorout](#colorout)
     5. [Nvim-R plugin](#nvimr)
-    6. [Nerdtree](#nerdtree)
+    6. [NerdTree](#nerdtree)
     7. [Color scheme](#colorscheme)
     8. [Setup in user accounts of UCR's HPCC](#ucrhpcc)
 3. [Usage and configuration](#usage)
@@ -238,6 +238,8 @@ Important key bindings for NerdTree usage:
 
 - `zz or :NERDTreeToggle`: opens NERDTree ('zz' requires corresponding setting in [.config/nvim/init.vim](https://github.com/tgirke/Nvim-R_Tmux/blob/main/.config/nvim/init.vim))
 - `:NERDTreeFind`: finds current file in tree
+- `?`: opens NERDTree help
+- `I`: toggle between showing and hiding hidden files/directories
 - `q`: closes NERDTree
 - `Ctrl-w-w`: jump cursor to next viewport including the one for NERDTree
 - `o or <enter>`: opens selected file
