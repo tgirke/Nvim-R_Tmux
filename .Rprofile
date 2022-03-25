@@ -1,5 +1,5 @@
-options(width=220, browser="lynx")
-lib.loc="/usr/local/lib/R/site-library/"
+options(width=220)
+# lib.loc="/usr/local/lib/R/site-library/"
 #library(grDevices)
 #X11.options(type="Xlib")
 # default X11() setting
