@@ -239,7 +239,7 @@ Important key bindings for NERDTree usage:
 - `zz or :NERDTreeToggle`: opens NERDTree ('zz' requires corresponding setting in [.config/nvim/init.vim](https://github.com/tgirke/Nvim-R_Tmux/blob/main/.config/nvim/init.vim))
 - `:NERDTreeFind`: finds current file in tree
 - `?`: opens NERDTree help
-- `I` (shift i): toggle between showing and hiding hidden files/directories
+- `I` (`shift` `i`): toggle between showing and hiding hidden files/directories
 - `q`: closes NERDTree
 - `Ctrl-w-w`: jump cursor to next viewport including the one for NERDTree
 - `o or <enter>`: opens selected file
