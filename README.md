@@ -15,13 +15,13 @@
     3. [Tmux](#tmux) 
     4. [R package colorout](#colorout)
     5. [Nvim-R plugin](#nvimr)
-    6. [NerdTree](#nerdtree)
+    6. [NERDTree](#nerdtree)
     7. [Color scheme](#colorscheme)
     8. [Setup in user accounts of UCR's HPCC](#ucrhpcc)
 3. [Usage and configuration](#usage)
     1. [Run R in built-in terminal emulator](#usage_nvim-r-split)
     2. [Run R in Tmux pane](#usage_tmux-split)
-    3. [Basic NerdTree usage](#usage_nerdtree)
+    3. [Basic NERDTree usage](#usage_nerdtree)
 4. [Config files](#configfiles)
 5. [Advanced topics](#advanced)
     1. [R version toggle](#rversion_toggle)
@@ -141,8 +141,8 @@ The version information for the Nvim-R plugin can be returned from vim's command
 
 <div id='nerdtree'/>
 
-### 2.6. Install Nerdtree (optional)
-Download the Nerdtree vim plugin from [here](http://www.vim.org/scripts/script.php?script_id=1658). Then extract to `~/.config/nvim` with the following command. Note, if `vim-plug` is used as outlined [here](#nvimr) then Nerdtree will be installed automatically.
+### 2.6. Install NERDTree (optional)
+Download the NERDTree vim plugin from [here](http://www.vim.org/scripts/script.php?script_id=1658). Then extract to `~/.config/nvim` with the following command. Note, if `vim-plug` is used as outlined [here](#nvimr) then Nerdtree will be installed automatically.
 
 ```sh
 unzip NERD_tree.zip -d ~/.config/nvim
@@ -169,7 +169,7 @@ fi
 
 2. Install Nvim-R plugin for Neovim as instructed [here](#nvimr)
 3. Save this [`init.vim`](https://gist.githubusercontent.com/tgirke/7a7c197b443243937f68c422e5471899/raw/init.vim) sample file to `~/.config/nvim/init.vim`
-4. Install Nerdtree plugin as instructed [here](#nerdtree)
+4. Install NERDTree plugin as instructed [here](#nerdtree)
 5. Install `southernlights` color scheme as instructed [here](#colorscheme)
 6. Now log out of the system and in again. After this start tmux and then open a `.R` or `.Rmd` file with `nvim` command. Next open a connected R session with the key combination `\rf` and then follow the usage instructions given [here](#usage).
 
@@ -234,12 +234,12 @@ Note, closing R in this setup will also close the corresponding Tmux pane. This 
 
 ### 3.3. Basic NERDTree usage
 
-Important key bindings for NerdTree usage:
+Important key bindings for NERDTree usage:
 
 - `zz or :NERDTreeToggle`: opens NERDTree ('zz' requires corresponding setting in [.config/nvim/init.vim](https://github.com/tgirke/Nvim-R_Tmux/blob/main/.config/nvim/init.vim))
 - `:NERDTreeFind`: finds current file in tree
 - `?`: opens NERDTree help
-- `I`: toggle between showing and hiding hidden files/directories
+- `I` (shift i): toggle between showing and hiding hidden files/directories
 - `q`: closes NERDTree
 - `Ctrl-w-w`: jump cursor to next viewport including the one for NERDTree
 - `o or <enter>`: opens selected file
