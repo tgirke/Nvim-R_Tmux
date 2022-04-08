@@ -13,7 +13,6 @@ if [ -f Nvim-R_Tmux.zip ] || [ -d Nvim-R_Tmux ]; then
 fi
 
 ## Clone Nvim-R_Tmux repos to your home on HPCC
-# git clone git@github.com:tgirke/Nvim-R_Tmux.git
 # git clone https://github.com/tgirke/Nvim-R_Tmux.git
 # cd Nvim-R_Tmux
 
@@ -25,13 +24,11 @@ fi
 cp .bashrc ~/
 echo "Moved new .bashrc file to home and created backup (~/.bashrc_bak) of existing one."
 
-## Copy the following files/dirs from Nvim-R_Tmux and make backups of existing versions
 ## 2. .bash_profile file
-if [ -f ~/.bash_profile ]; then
-    mv ~/.bash_profile ~/.bash_profile_bak
+if [ ! -f ~/.bash_profile ]; then
+    cp .bash_profile ~/
 fi
-cp .bash_profile ~/
-echo "Moved new .bash_profile file to home and created backup (~/.bash_profile_bak) of existing one."
+echo "If not present, moved .bash_profile file to home."
 
 ## 3. .tmux.conf file
 if [ -f ~/.tmux.conf ]; then
@@ -75,5 +72,5 @@ cd ..
 rm -rf Nvim-R_Tmux
 
 ## In case someone wants to undo changes here are some instructions
-printf "To undo changes, run: \n\tcd ~/; mv .bashrc .bashrc_bak2; mv .bashrc_bak .bashrc; mv .bash_profile_bak .bash_profile; mv .tmux.conf .tmux.conf_bak2; mv .tmux.conf_bak .tmux.conf; mv .Rprofile .Rprofile_bak2; mv .Rprofile_bak .Rprofile; mv .config/nvim .config/nvim_bak2; mv .config/nvim_bak .config/nvim; mv .local/share/nvim .local/share/nvim_bak2; mv .local/share/nvim_bak .local/share/nvim\n"
+printf "To undo changes, run: \n\tcd ~/; mv .bashrc .bashrc_bak2; mv .bashrc_bak .bashrc; mv .tmux.conf .tmux.conf_bak2; mv .tmux.conf_bak .tmux.conf; mv .Rprofile .Rprofile_bak2; mv .Rprofile_bak .Rprofile; mv .config/nvim .config/nvim_bak2; mv .config/nvim_bak .config/nvim; mv .local/share/nvim .local/share/nvim_bak2; mv .local/share/nvim_bak .local/share/nvim\n"
 
