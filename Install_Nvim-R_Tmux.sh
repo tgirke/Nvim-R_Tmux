@@ -25,21 +25,29 @@ fi
 cp .bashrc ~/
 echo "Moved new .bashrc file to home and created backup (~/.bashrc_bak) of existing one."
 
-## 2. .tmux.conf file
+## Copy the following files/dirs from Nvim-R_Tmux and make backups of existing versions
+## 2. .bash_profile file
+if [ -f ~/.bash_profile ]; then
+    mv ~/.bash_profile ~/.bash_profile_bak
+fi
+cp .bash_profile ~/
+echo "Moved new .bash_profile file to home and created backup (~/.bash_profile_bak) of existing one."
+
+## 3. .tmux.conf file
 if [ -f ~/.tmux.conf ]; then
     mv ~/.tmux.conf ~/.tmux.conf_bak
 fi
 cp .tmux.conf ~/
 echo "Moved new .tmux.conf file to home and created backup (~/.tmux.conf_bak) of existing one."
 
-## 3. .Rprofile file
+## 4. .Rprofile file
 if [ -f ~/.Rprofile ]; then
     mv ~/.Rprofile ~/.Rprofile_bak
 fi
 cp .Rprofile ~/
 echo "Moved new .Rprofile file to home and created backup (~/.Rprofile_bak) of existing one."
 
-## 4. .config directory
+## 5. .config directory
 if [ ! -d ~/.config ]; then
     mkdir ~/.config 
 fi
@@ -49,7 +57,7 @@ fi
 cp -r .config/nvim ~/.config/
 echo "Moved new .config/nvim directory to ~/.config and created backup (~/.config/nvim_bak) of existing one."
 
-## 5. .local directory
+## 6. .local directory
 if [ ! -d ~/.local ]; then
     mkdir ~/.local 
 fi
@@ -67,5 +75,5 @@ cd ..
 rm -rf Nvim-R_Tmux
 
 ## In case someone wants to undo changes here are some instructions
-printf "To undo changes, run: \n\tcd ~/; mv .bashrc .bashrc_bak2; mv .bashrc_bak .bashrc; mv .tmux.conf .tmux.conf_bak2; mv .tmux.conf_bak .tmux.conf; mv .Rprofile .Rprofile_bak2; mv .Rprofile_bak .Rprofile; mv .config/nvim .config/nvim_bak2; mv .config/nvim_bak .config/nvim; mv .local/share/nvim .local/share/nvim_bak2; mv .local/share/nvim_bak .local/share/nvim\n"
+printf "To undo changes, run: \n\tcd ~/; mv .bashrc .bashrc_bak2; mv .bashrc_bak .bashrc; mv .bash_profile_bak .bash_profile; mv .tmux.conf .tmux.conf_bak2; mv .tmux.conf_bak .tmux.conf; mv .Rprofile .Rprofile_bak2; mv .Rprofile_bak .Rprofile; mv .config/nvim .config/nvim_bak2; mv .config/nvim_bak .config/nvim; mv .local/share/nvim .local/share/nvim_bak2; mv .local/share/nvim_bak .local/share/nvim\n"
 
