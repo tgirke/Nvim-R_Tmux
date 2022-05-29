@@ -506,7 +506,8 @@ sudo apt install build-essential \
     texlive-full \
     librsvg2-dev \
     libcairo2-dev \
-    libxt-dev 
+    libxt-dev \ 
+    libgsl-dev
 ```
 
 For R Markdown one will need to have the command-line tool `pandoc` installed. On Debian/Ubuntu systems it can be installed via `apt get install pandoc pandoc-citeproc`. Alternatively, installing RStudio will include a pandoc version recommended by R Markdown. If command-line R cannot locate RStudio's pandoc version, then one can set the proper path in any R/Rmd script or in a user's .Rprofile file with `Sys.setenv(RSTUDIO_PANDOC="<insert_path>")`. The path (here `<insert_path>`) can be identified by running from RStudio: `Sys.getenv("RSTUDIO_PANDOC")`.
