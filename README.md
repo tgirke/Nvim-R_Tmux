@@ -17,7 +17,8 @@
     5. [Nvim-R plugin](#nvimr)
     6. [NERDTree](#nerdtree)
     7. [Color scheme](#colorscheme)
-    8. [Setup in user accounts of UCR's HPCC](#ucrhpcc)
+    8. [Indentation guides](#indentguide)
+    9. [Setup in user accounts of UCR's HPCC](#ucrhpcc)
 3. [Usage and configuration](#usage)
     1. [Run R in built-in terminal emulator](#usage_nvim-r-split)
     2. [Run R in Tmux pane](#usage_tmux-split)
@@ -128,6 +129,8 @@ call plug#begin(has('nvim') ? stdpath('data') . '/plugged' : '~/.vim/plugged')
 Plug 'jalvesaq/Nvim-R'                    
 Plug 'preservim/nerdtree'
 Plug 'jalvesaq/vimcmdline'
+Plug 'nvim-treesitter/nvim-treesitter'
+Plug 'lukas-reineke/indent-blankline.nvim'
 " List ends here. Plugins become visible to Vim after this call.                          
 call plug#end()        
 ```
@@ -153,9 +156,14 @@ unzip NERD_tree.zip -d ~/.config/nvim
 ### 2.7. Color Scheme (optional)
 Jakson Alves de Aquino has developed the `southernlights` color scheme that works well with Nvim-R. To enable it, users want to save the file `southernlights.vim` from this [repos](https://github.com/jalvesaq/southernlights) to `~/.config/nvim/colors/` and add the recommended bash configurations to your `.bashrc` as described [here](https://github.com/jalvesaq/southernlights).  Note, this color scheme should be installed under `~/.config/nvim/colors/` even if a plugin manager is used that installs other plugins under `~/.local/share/nvim/plugged/`.
 
+<div id='indentguide'/>
+
+### 2.8. Indentation Guides 
+Vertical indentation lines (guides) are useful for tracking context in code. To enable indentation lines in nvim, one can use the [indent-blankline.nvim](https://github.com/lukas-reineke/indent-blankline.nvim) plugin. In addition, [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter) should be installed. Both are included in the vim-plug install section (see [2.5.2](#nvimr)). When nvim is configured with an `init.vim` file instead of `init.lua`, then it is important to enclose lua parameter lines in `init.vim` with a starting line `lua <<EOF` and an ending line `EOF`. For details see [here](https://vonheikemen.github.io/devlog/tools/configuring-neovim-using-lua/).
+
 <div id='ucrhpcc'/>
 
-### 2.8. Setup in user accounts of UCR's HPCC
+### 2.9. Setup in user accounts of UCR's HPCC
 Neovim and Tmux are already installed systemwide on the [HPCC](https://hpcc.ucr.edu/), but need to be loaded from the module system (step 1). What remains to be installed in each user's account are the plugins and configuration files as outlined below under steps 2-5. Alternatively, all required resources will be installed automatically by executing the command [`Install_Nvim-R_Tmux`](https://github.com/tgirke/Install_Nvim-R_Tmux) (old version was `install_nvimRtmux`) in a user's HPCC account.  
 
 1. Add to your `.bashrc` the following lines
