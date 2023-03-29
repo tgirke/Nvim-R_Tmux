@@ -161,6 +161,7 @@ Jakson Alves de Aquino has developed the `southernlights` color scheme that work
 ### 2.8. Indentation Guides 
 Vertical indentation lines (guides) are useful for tracking context in code. To enable indentation lines in nvim, one can use the [indent-blankline.nvim](https://github.com/lukas-reineke/indent-blankline.nvim) plugin. In addition, [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter) should be installed. Both are included in the vim-plug install section above (see [2.5.2](#nvimr)). When nvim is configured with an `init.vim` file instead of `init.lua`, then it is important to enclose lua parameter (_e.g._ those for guide lines [here](https://github.com/lukas-reineke/indent-blankline.nvim)) lines in `init.vim` with the start/end lines given below. For details on `init.vim` and `init.lua`, see [here](https://vonheikemen.github.io/devlog/tools/configuring-neovim-using-lua/). Note, when the plugin is installed then the indentation guides show by default. To disable them, use `:IndentBlanklineToggle` or additional commands starting with `Indent...`.
 
+
 ```sh
 lua <<EOF
 ---lua lines
