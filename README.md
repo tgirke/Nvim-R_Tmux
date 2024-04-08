@@ -30,7 +30,7 @@
     3. [Install tmux from source](#source_install_tmux) 
     4. [Install pre-built R versions](#install_R)
     5. [Install R from source](#source_install_R)
-6. [Useful links](useful_links)
+6. [Useful links](#useful_links)
 
 * * *
 
