@@ -30,6 +30,7 @@
     3. [Install tmux from source](#source_install_tmux) 
     4. [Install pre-built R versions](#install_R)
     5. [Install R from source](#source_install_R)
+6. [Useful links](useful_links)
 
 * * *
 
@@ -598,4 +599,9 @@ __b.__ ...
 
 ...
 
+<div id='useful_links'/>
+
+### 5.6. Useful links
+
++ [rig: The R Installation Manager](https://github.com/r-lib/rig) 
 
