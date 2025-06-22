@@ -121,7 +121,7 @@ Download the latest `*.vmb` from [here](https://vim8.org/scripts/script.php?scri
 ```
 
 #### 2.5.2 Install with plugin manager
-When new features become available in Nvim-R then one can get them immediately by installing the Nvim-R plugin from its [GitHub repos](https://github.com/jalvesaq/Nvim-R) directly. After downloading the repos, one can move its content (files and directories) manually to `~/.config/nvim` or install it with a Neovim plugin manager that includes GitHub support. The following uses `vim-plug` as plugin manager. After installing `vim-plug` for neovim as outlined [here](https://github.com/junegunn/vim-plug/wiki/tutorial) one can install plugins by listing them at the end of the `~/.config/nvim/init.vim` file as follows:
+When new features become available in Nvim-R then one can get them immediately by installing the Nvim-R plugin from its [GitHub repos](https://github.com/jalvesaq/Nvim-R) directly. After downloading the repos, one can move its content (files and directories) manually to `~/.local/share/nvim/plugged/` (or `~/.config/nvim`) or install it with a Neovim plugin manager that includes GitHub support. The following uses `vim-plug` as plugin manager. After installing `vim-plug` for neovim as outlined [here](https://github.com/junegunn/vim-plug/wiki/tutorial) one can install plugins by listing them at the end of the `~/.config/nvim/init.vim` file as follows:
 
 ```sh
 " Plugins will be downloaded under the specified directory.
